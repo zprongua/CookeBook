@@ -1,5 +1,13 @@
 package cookebook.domain;
 
-public class Ingredient {
+import org.springframework.data.annotation.Id;
 
+@Entity
+public class Ingredient {
+    @Id
+    private Long id;
+
+    private String name;
+
+    private double weight;
 }
