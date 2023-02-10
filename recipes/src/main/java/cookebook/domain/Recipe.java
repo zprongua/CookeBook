@@ -2,6 +2,7 @@ package cookebook.domain;
 
 import org.springframework.data.annotation.Id;
 
+import jakarta.persistence.Entity;
 import lombok.AllArgsConstructor;
 import lombok.Getter;
 import lombok.NoArgsConstructor;
