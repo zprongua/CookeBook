@@ -4,7 +4,7 @@ USE CookeBook;
 
 CREATE TABLE IF NOT EXISTS user(
     id BIGINT AUTO_INCREMENT PRIMARY KEY NOT NULL,
-    login CHARACTER VARYING(50),
+    login CHARACTER VARYING(25),
     fname CHARACTER VARYING(50),
     lname CHARACTER VARYING(50),
     email CHARACTER VARYING(50)
@@ -13,12 +13,14 @@ CREATE TABLE IF NOT EXISTS user(
 CREATE TABLE IF NOT EXISTS ingredient(
     id BIGINT AUTO_INCREMENT PRIMARY KEY NOT NULL,
     name CHARACTER VARYING(50),
-    weight INT
+    weight INT,
+    recipe_id
 );
 
 CREATE TABLE IF NOT EXISTS instruction(
     id BIGINT AUTO_INCREMENT PRIMARY KEY NOT NULL,
-    instruction CHARACTER VARYING(255)
+    instruction CHARACTER VARYING(255),
+    recipe_id
 );
 
 CREATE TABLE IF NOT EXISTS pantry(
@@ -29,3 +31,8 @@ CREATE TABLE IF NOT EXISTS recipe(
     id BIGINT AUTO_INCREMENT PRIMARY KEY NOT NULL,
     title CHARACTER VARYING(255)
 );
+
+ALTER TABLE user ADD CONSTRAINT user_login UNIQUE(login);
+ALTER TABLE user ADD CONSTRAINT user_email UNIQUE(email);
+ALTER TABLE ingredient ADD CONSTRAINT FK_ingredient__recipe_id FOREIGN KEY(recipe_id) REFERENCES recipe(id);
+ALTER TABLE instruction ADD CONSTRAINT FK_instruction__recipe_id FOREIGN KEY(recipe_id) REFERENCES recipe(id);
