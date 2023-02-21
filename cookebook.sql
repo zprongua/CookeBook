@@ -36,3 +36,4 @@ ALTER TABLE user ADD CONSTRAINT user_login UNIQUE(login);
 ALTER TABLE user ADD CONSTRAINT user_email UNIQUE(email);
 ALTER TABLE ingredient ADD CONSTRAINT FK_ingredient__recipe_id FOREIGN KEY(recipe_id) REFERENCES recipe(id);
 ALTER TABLE instruction ADD CONSTRAINT FK_instruction__recipe_id FOREIGN KEY(recipe_id) REFERENCES recipe(id);
+ALTER TABLE ingredient ADD CONSTRAINT FK_ingredient__pantry_id FOREIGN KEY(recipe_id) REFERENCES pantry(id);
