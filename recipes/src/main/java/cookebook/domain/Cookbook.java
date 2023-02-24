@@ -1,25 +1,18 @@
 package cookebook.domain;
 
-import org.springframework.data.annotation.Id;
-
 import jakarta.persistence.Entity;
+import jakarta.persistence.Id;
 import lombok.AllArgsConstructor;
 import lombok.Getter;
 import lombok.NoArgsConstructor;
 import lombok.Setter;
 
-@Setter
 @Getter
-@AllArgsConstructor
+@Setter
 @NoArgsConstructor
+@AllArgsConstructor
 @Entity
-public class Ingredient {
+public class Cookbook {
     @Id
     private Long id;
-
-    private String name;
-
-    private double weight;
-
-    private Unit weightUnit;
 }

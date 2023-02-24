@@ -21,4 +21,5 @@ public class Recipe {
 
     private Ingredient ingredients;
 
+    private Instruction instruction;
 }

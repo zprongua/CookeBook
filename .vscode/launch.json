@@ -1,0 +1,14 @@
+{
+  "configurations": [
+    {
+      "type": "java",
+      "name": "Spring Boot-RecipesApplication<recipes>",
+      "request": "launch",
+      "cwd": "${workspaceFolder}",
+      "mainClass": "cookebook.RecipesApplication",
+      "projectName": "recipes",
+      "args": "",
+      "envFile": "${workspaceFolder}/.env"
+    }
+  ]
+}
