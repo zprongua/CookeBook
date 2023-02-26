@@ -3,6 +3,7 @@
 /home/zed/coding/CookeBook/recipes/src/main/java/cookebook/repository/PantryRepository.java
 /home/zed/coding/CookeBook/recipes/src/main/java/cookebook/controller/IngredientController.java
 /home/zed/coding/CookeBook/recipes/src/main/java/cookebook/domain/User.java
+/home/zed/coding/CookeBook/recipes/src/main/java/cookebook/domain/Cookbook.java
 /home/zed/coding/CookeBook/recipes/src/main/java/cookebook/domain/Instruction.java
 /home/zed/coding/CookeBook/recipes/src/main/java/cookebook/domain/Ingredient.java
 /home/zed/coding/CookeBook/recipes/src/main/java/cookebook/repository/RecipeRepository.java
