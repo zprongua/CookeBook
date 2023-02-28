@@ -11,7 +11,9 @@
 /home/zed/coding/CookeBook/recipes/src/main/java/cookebook/domain/Unit.java
 /home/zed/coding/CookeBook/recipes/src/main/java/cookebook/repository/UserRepository.java
 /home/zed/coding/CookeBook/recipes/src/main/java/cookebook/controller/PantryController.java
+/home/zed/coding/CookeBook/recipes/src/main/java/cookebook/controller/CookbookController.java
 /home/zed/coding/CookeBook/recipes/src/main/java/cookebook/domain/Recipe.java
+/home/zed/coding/CookeBook/recipes/src/main/java/cookebook/repository/CookbookRepository.java
 /home/zed/coding/CookeBook/recipes/src/main/java/cookebook/controller/UserController.java
 /home/zed/coding/CookeBook/recipes/src/main/java/cookebook/controller/RecipeController.java
 /home/zed/coding/CookeBook/recipes/src/main/java/cookebook/RecipesApplication.java
