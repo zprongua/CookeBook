@@ -9,23 +9,23 @@ import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestMapping;
 
-import cookebook.domain.User;
-import cookebook.repository.UserRepository;
+import cookebook.domain.Users;
+import cookebook.repository.UsersRepository;
 
 @Controller
-@RequestMapping("/user")
-public class UserController {
+@RequestMapping("/users")
+public class UsersController {
 
     @Autowired
-    UserRepository userRepository;
+    UsersRepository usersRepository;
 
     @GetMapping
-    private ResponseEntity<Iterable<User>> getUsers() {
-        return new ResponseEntity<>(userRepository.findAll(), HttpStatus.OK);
+    private ResponseEntity<Iterable<Users>> getUsers() {
+        return new ResponseEntity<>(usersRepository.findAll(), HttpStatus.OK);
     }
 
     @PostMapping
-    private ResponseEntity<User> newUser(@RequestBody User user) {
-        return new ResponseEntity<>(userRepository.save(user), HttpStatus.CREATED);
+    private ResponseEntity<Users> newUser(@RequestBody Users users) {
+        return new ResponseEntity<>(usersRepository.save(users), HttpStatus.CREATED);
     }
 }

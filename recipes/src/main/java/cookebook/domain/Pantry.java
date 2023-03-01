@@ -13,5 +13,5 @@ public class Pantry {
     private Long id;
 
     @OneToOne
-    private User user;
+    private Users users;
 }

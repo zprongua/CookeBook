@@ -1,9 +1,12 @@
 package cookebook.domain;
 
+import java.util.List;
+
 import jakarta.persistence.Entity;
 import jakarta.persistence.GeneratedValue;
 import jakarta.persistence.GenerationType;
 import jakarta.persistence.Id;
+import jakarta.persistence.OneToMany;
 import lombok.AllArgsConstructor;
 import lombok.Getter;
 import lombok.NoArgsConstructor;
@@ -21,7 +24,9 @@ public class Recipe {
 
     private String title;
 
-    private Ingredient ingredients;
+    @OneToMany
+    private List<Ingredient> ingredients;
 
-    private Instruction instruction;
+    @OneToMany
+    private List<Instruction> instruction;
 }
