@@ -2,7 +2,7 @@ import React from 'react'
 
 function Cookbook() {
     return (
-        <div>
+        <div className="App">
             <h1>This is your Cook-e-Book</h1>
             <ul>
                 <li>Chicken Alfredo</li>

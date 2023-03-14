@@ -8,8 +8,6 @@ body {
   text-align: center;
   height: 100%;
   padding: 0;
-  /*background-color: aliceblue;*/
-  background: rgb(238,174,202);
   background: radial-gradient(circle, rgba(101,154,115,1) 0%, rgba(58,88,125,1) 100%);
 }
 
@@ -50,4 +48,18 @@ body {
 
 .Header-logo {
   text-align: center;
+}
+
+.Cookbook {
+  text-align: center;
+  height: 100%;
+  padding: 0;
+  background: radial-gradient(circle, rgba(101,154,115,1) 0%, rgba(58,88,125,1) 100%);
+}
+
+.Pantry {
+  text-align: center;
+  height: 100%;
+  padding: 0;
+  background: radial-gradient(circle, rgba(101,154,115,1) 0%, rgba(58,88,125,1) 100%);
 }
