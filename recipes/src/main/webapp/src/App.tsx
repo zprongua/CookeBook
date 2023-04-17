@@ -6,6 +6,9 @@ function App() {
   return (
     <div className="App container-fluid">
       <Header/>
+      <h5>
+        An online cookbook to help you keep track of recipes and ingredients in your pantry, making cooking a breeze.
+      </h5>
       <div className="row">
         <div className="col-3"></div>
         <div className="col-5 text-start">
@@ -23,6 +26,7 @@ function App() {
         <div className="col-3"></div>
           <div className="col-5 text-center">
             <button type="button" className="btn btn-secondary">Get Started</button>
+            &nbsp;
             <button type="button" className="btn btn-secondary">Login</button>
           </div>
         <div className="col-3"></div>
